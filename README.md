@@ -630,18 +630,21 @@ user/vehicle association checks without claiming they provide authentication.
 
 ---
 
-Thikra — Extra Endpoints
+# Thikra — Extra Endpoints
+
 The following endpoints were implemented by Thikra. They provide business functionality beyond standard CRUD operations.
-Method	Endpoint	Description
-GET	/api/v1/maintenance-record/cost/{vehicleId}/{year}	Get the total maintenance cost for a vehicle in a specific year.
-GET	/api/v1/receipt/vehicle/{vehicleId}	Get all receipts for a specific vehicle.
-GET	/api/v1/receipt/vehicle/{vehicleId}/total	Get the total receipt amount for a specific vehicle.
-POST	/api/v1/notification/check/{vehicleId}	Check whether a vehicle has maintenance due.
-POST	/api/v1/notification/check-and-send/{vehicleId}	Check maintenance status and send a WhatsApp notification when maintenance is due.
-POST	/api/v1/notification/retry/{notificationId}	Retry a failed notification.
-POST	/api/v1/notification/vehicle/{vehicleId}/monthly-report	Send the vehicle's monthly report by email.
-POST	/api/v1/receipt-ai/add/{maintenanceRecordId}	Upload a receipt image and use AI to extract receipt information.
-POST	/api/v1/ai/ask/{vehicleId}	Ask AI a question about a vehicle.
-POST	/api/v1/ai/analyze-problem/{vehicleId}	Analyze a vehicle problem using AI.
-POST	/api/v1/ai/maintenance-advice/{vehicleId}	Get maintenance advice based on the vehicle's data.
-POST	/api/v1/ai/summarize-history/{vehicleId}	Generate an AI summary of the vehicle's maintenance history.
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/v1/maintenance-record/cost/{vehicleId}/{year}` | Get the total maintenance cost for a vehicle in a specific year. |
+| GET | `/api/v1/receipt/vehicle/{vehicleId}` | Get all receipts for a specific vehicle. |
+| GET | `/api/v1/receipt/vehicle/{vehicleId}/total` | Get the total receipt amount for a specific vehicle. |
+| POST | `/api/v1/notification/check/{vehicleId}` | Check whether a vehicle has maintenance due. |
+| POST | `/api/v1/notification/check-and-send/{vehicleId}` | Check maintenance status and send a WhatsApp notification when maintenance is due. |
+| POST | `/api/v1/notification/retry/{notificationId}` | Retry a failed notification. |
+| POST | `/api/v1/notification/vehicle/{vehicleId}/monthly-report` | Send the vehicle's monthly report by email. |
+| POST | `/api/v1/receipt-ai/add/{maintenanceRecordId}` | Upload a receipt image and use AI to extract receipt information. |
+| POST | `/api/v1/ai/ask/{vehicleId}` | Ask AI a question about a vehicle. |
+| POST | `/api/v1/ai/analyze-problem/{vehicleId}` | Analyze a vehicle problem using AI. |
+| POST | `/api/v1/ai/maintenance-advice/{vehicleId}` | Get maintenance advice based on the vehicle's data. |
+| POST | `/api/v1/ai/summarize-history/{vehicleId}` | Generate an AI summary of the vehicle's maintenance history. |
